@@ -2,10 +2,10 @@
 spec:
   structures:
     - content_blocks
-  label: "Page-bg"
-  description:
-  icon:
-  tags: []
+  label: "Full Page Background"
+  description: A full page background image.
+  icon: wallpaper
+  tags: ["layout", "background"]
 
 # Defines the structure of this component, as well as the default values
 blueprint:
