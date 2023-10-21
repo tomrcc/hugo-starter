@@ -23,6 +23,9 @@
 <body>
     <main>
         {{ partial "header.html" . }}
+        {{ with .Params.background_image }}
+            {{ partial "bookshop" (slice "page-bg" (dict "background_image" .)) }}
+        {{ end }}
         <!-- Render any additional page content below the page's content blocks -->
         {{ block "main" . }}{{ end }}
     </main>

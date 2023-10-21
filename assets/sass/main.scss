@@ -1,5 +1,14 @@
 @import 'variables';
 
+main {
+  position: relative;
+}
+
+body {
+  padding: 0;
+  margin: 0
+}
+
 .header {
   position: relative;
 

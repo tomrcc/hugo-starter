@@ -1,5 +1,6 @@
 ---
 title:
+background_image: /images/backgrounds/sunset-gradient.png
 content_blocks:
   - _bookshop_name: hero
     bg_image: /images/backgrounds/textures/home-web.svg
