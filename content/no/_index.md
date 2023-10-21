@@ -1,5 +1,5 @@
 ---
-title:
+title: Home (No)
 content_blocks:
   - _bookshop_name: page-bg
     background_image: /images/backgrounds/sunset-gradient.png
