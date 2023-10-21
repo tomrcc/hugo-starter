@@ -1,0 +1,26 @@
+{{ $num_cols := 1 }}
+{{ if gt .num_cols 0 }}
+{{$num_cols = (int .num_cols) }}
+{{ else }}
+{{ $num_cols = (len .columns) }}
+{{ end }}
+{{ $num_cols_class := ""}}
+{{ $col_span_class := ""}}
+
+{{ if eq $num_cols 2 }}
+<p>two!</p>
+{{$num_cols_class = "lg:grid-cols-2"}}
+{{ else if eq $num_cols 3 }}
+<p>three!</p>
+{{$num_cols_class = "lg:grid-cols-3"}}
+{{ else if eq $num_cols 4 }}
+<p>four!</p>
+{{$num_cols_class = "lg:grid-cols-4"}}
+{{ end }}
+
+<p>printf "%T" $num_cols: {{ printf "%T" $num_cols }}</p>
+<p>$num_cols: {{$num_cols}}</p>
+<p>$num_cols_class: {{$num_cols_class}}</p>
+<p>.num_cols: {{.num_cols}}</p>
+<p>gt .num_cols 0: {{gt .num_cols 0}}</p>
+<p>len .columns: {{len .columns}}</p>
