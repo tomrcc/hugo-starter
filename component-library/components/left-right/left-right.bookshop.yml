@@ -2,26 +2,24 @@
 spec:
   structures:
     - content_blocks
-  label: Content
-  description: Generic rich content area
-  icon: wysiwyg
-  tags:
-    - Text
+  label: Left-Right Block
+  description: Left-Right block with heading, text & button next to image.
+  icon: 'chrome_reader_mode'
+  tags: ['block', 'left-right']
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  content_html: ""
-  type: standard
+  bg_image:
+  heading:
+  text:
+  button: bookshop:global/button
+  image:
+  image_alt:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  content_html: <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  type:
-    type: select
-    options:
-      values:
-        - standard
-        - note
+  text:
+    type: markdown
