@@ -1,0 +1,38 @@
+collections_config:
+  en_pages:
+    icon: feed
+    disable_add_folder: true
+    output: true
+    path: content/en
+    _enabled_editors:
+      - visual
+  de_pages:
+    icon: feed
+    disable_add_folder: true
+    output: true
+    path: content/de
+    _enabled_editors:
+      - visual
+  data: 
+    output: true
+    path: data
+    icon: settings
+    disable_add: true
+    disable_add_folder: true
+    _enabled_editors:
+      - data
+
+collection_groups:
+  - heading: English
+    collections:
+      - en_pages
+  - heading: Deutsch
+    collections:
+      - de_pages
+  - heading: Site Settings
+    collections:
+      - data
+
+paths:
+  uploads: static/images
+  data: data
