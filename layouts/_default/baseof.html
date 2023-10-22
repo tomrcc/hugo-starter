@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+{{ $relLink := .Page.RelPermalink }}
+{{ $trimmed := strings.Substr $relLink 0 4 }}
+{{ $lang := trim $trimmed "/" }}
+<html lang="{{ $lang }}">
 
 <head>
     <meta charset="UTF-8">
