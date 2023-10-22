@@ -6,6 +6,7 @@ collections_config:
     path: content/en
     _enabled_editors:
       - visual
+      - content
   de_pages:
     icon: feed
     disable_add_folder: true
@@ -13,6 +14,7 @@ collections_config:
     path: content/de
     _enabled_editors:
       - visual
+      - content
   data: 
     output: true
     path: data
@@ -21,6 +23,11 @@ collections_config:
     disable_add_folder: true
     _enabled_editors:
       - data
+
+_enabled_editors:
+  - visual
+  - content
+  - data
 
 collection_groups:
   - heading: English
