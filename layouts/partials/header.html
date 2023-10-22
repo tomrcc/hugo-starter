@@ -76,6 +76,13 @@
         </button>
         <!-- Mobile nav -->
         <ul class="{{ $c }}__nav-list-mobile" x-show="open" x-cloak x-transition>
+          {{ range $.Translations }}
+            <li>
+              <a class="lang-link" title="{{ .Language.LanguageName }}" href="{{ .Permalink }}">
+                {{ .Language.LanguageName }}
+              </a>
+            </li>
+          {{ end }}
           {{ range .items }}
             {{ $url := .link }}
             <li>
@@ -89,6 +96,13 @@
             {{ $url := .link }}
             <li class="{{ $c }}__nav-list-item">
               <a class="nav-link" href="{{ .link }}">{{ .text }}</a>
+            </li>
+          {{ end }}
+          {{ range $.Translations }}
+            <li>
+              <a class="lang-link" title="{{ .Language.LanguageName }}" href="{{ .Permalink }}">
+                {{ .Language.LanguageName }}
+              </a>
             </li>
           {{ end }}
         </ul>

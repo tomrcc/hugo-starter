@@ -6,7 +6,11 @@ main {
 
 body {
   padding: 0;
-  margin: 0
+  margin: 0;
+}
+
+li {
+  list-style: none;
 }
 
 .header {
@@ -15,6 +19,7 @@ body {
   &__container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: $base-padding;
     max-width: $max-width-xxl;
     margin: 0 auto;
@@ -49,6 +54,7 @@ body {
     @media screen and (min-width: $max-width-xl) {
       position: static;
       display: flex;
+      align-items: center;
       padding: 0;
 
       li {
@@ -68,15 +74,23 @@ body {
     display: flex;
 
     img {
-      width: .9rem;
-      margin-left: .5rem;
+      width: 0.9rem;
+      margin-left: 0.5rem;
     }
+  }
+
+  .lang-link {
+    display: inline-block;
+    padding: 1rem 1.75rem;
+    background-color: $color-primary;
+    color: $color-text-white;
+    border-radius: 8px;
   }
 
   &__nav-list-mobile {
     position: absolute;
     z-index: 99;
-    top: 76px;
+    top: 45px;
     right: 0;
     left: 0;
 
@@ -85,11 +99,9 @@ body {
     padding: 2rem;
     border-radius: 0 0 0 4px;
     font-family: $font-primary;
-    letter-spacing: 1.2;
-    color: text;
 
     li {
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
 
     @media screen and (min-width: $max-width-xl) {
