@@ -8,6 +8,7 @@ module:
     - path: github.com/cloudcannon/bookshop/hugo/v3
 # Languages
 defaultContentLanguage: en
+defaultContentLanguageInSubdir: true
 languages:
   en:
     contentDir: content/en
