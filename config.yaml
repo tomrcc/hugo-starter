@@ -6,20 +6,4 @@ module:
   imports:
     - path: local/component-library
     - path: github.com/cloudcannon/bookshop/hugo/v3
-# Languages
-languages:
-  en:
-    contentDir: content/en
-    disabled: false
-    languageCode: en-US
-    languageDirection: ltr
-    languageName: English
-    weight: 1
-  de:
-    contentDir: content/de
-    disabled: false
-    languageCode: de-DE
-    languageDirection: ltr
-    languageName: Deutsch
-    weight: 2
 
