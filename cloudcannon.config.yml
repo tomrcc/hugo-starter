@@ -22,6 +22,14 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+  blog:
+    path: content/blog
+    output: true
+    url: "/blog/[slug]/"
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
   data:
     path: data
     output: false
