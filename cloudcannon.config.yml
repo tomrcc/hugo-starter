@@ -112,3 +112,8 @@ _structures:
 _editables: {}
 data_config: {}
 timezone: Etc/UTC
+_snippets_imports:
+  python_markdown_extensions:
+    include:
+      - python_markdown_footnote
+      - python_markdown_footnote_marker
