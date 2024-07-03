@@ -9,15 +9,15 @@ thumbImg:
 featuredImg:
   image_path: /images/blog/featured-image-3.jpg
 seo:
-  page_description: 
-  canonical_url: 
-  featured_image: 
-  author_twitter_handle: 
+  page_description:
+  canonical_url:
+  featured_image:
+  author_twitter_handle:
   open_graph_type:
   no_index: false
 draft: false
 ---
-When you send an email campaign, you expect it to reach your readers, right? But what if the emails go straight to your subscribers' spam folders instead of their inboxes? To make sure your emails reach their recipients successfully, follow these email delivery tips.
+When you send an email campaign, you expect it to reach your readers, right? But what if the emails go straight to your subscribers' spam folders instead of their inboxes? To make sure your emails reach their recipients successfully, follow these email delivery tips. This is a test.[^1]
 
 ### Use an ESP
 
@@ -44,3 +44,6 @@ Choose a reliable ESP that allows you to track opens and clicks so you can figur
 ### Send your best email
 
 So, remember to keep this in mind and to always know that if you are sending out emails related to your business, be sure to follow-up with customers or clients and make sure that they are getting their emails in a timely manner.
+
+[^1]:
+    This is some info related to the footnote test!
